@@ -1,0 +1,16 @@
+class Solution {
+    public String solution(String phone_number) {
+        String answer = "";
+        String[] a = phone_number.split(""); // 이렇게 하면 하나하나 짤라서 배열에 넣는다.
+        for(int i= 0; i<a.length; i++){
+            
+            // 길이 -n은 뒤에서부터 빼주나보다
+            if(i < (a.length-4)) {
+                answer += "*";
+            } else {
+                answer += a[i];
+            }
+        }
+        return answer;
+    }
+}
