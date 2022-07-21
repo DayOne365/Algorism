@@ -10,6 +10,12 @@ StringBuilder sb = new StringBuilder(str);
 스트링 빌드에서 뒤집는다 ?
 sb = sb.reverse();
 
+1-1. 내림차순
+문자  배열 = 변수.문자 배열 변환
+		char[] arr = str.toCharArray();
+문자배열을 내림차순으로 ?
+Arrays.sort(arr);
+
 
 2. 배열로 만들기 ( 꼭 .split("") 하면 이게 배열화 시킬 수 있다...
 String[] arr = sb.toString().split("");
