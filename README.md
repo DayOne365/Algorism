@@ -100,12 +100,12 @@ sb.append(Character.toLowerCase(c) // -> 소문자로 변환
 Map<String, Integer> map = new HashMap<>(); // 키는 String , 값은 Integer로 생성
 map.put(p, map.get(p) + 1) // put(키, 값)
 ```
-###배열에서 동일한 것 찾기
+### 배열에서 동일한 것 찾기
 ```
 seoul[i].equals(kim) // -> 서울이라는 배열에서 반복하며 kim의 변수 값과 동일한게 있는지 찾기 (동일한 값의 인덱스를 알 수 있다.
 ```
 
-###문자 자료형의 숫자도 대소 관계 적용된다.
+### 문자 자료형의 숫자도 대소 관계 적용된다.
 ```
 if(!(temp[i] >= '0' && temp[i] <= '9'))
 ```
