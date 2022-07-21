@@ -28,4 +28,12 @@ String[] arr = sb.toString().split("");
 3. 무적의 정수형으로 변환하기
 Integer.parseInt(arr[i]);
 
+4. 리스트 생성
+ArrayList<Integer> list = new ArrayList<>();
 
+5. 리스트 반복문
+for (int a : arr) a 는 반북문 횟수 : arr 매개변수
+  list.add(a);
+  
+6. 리스트 인덱스번호로 지우기
+list.remove(list.indexOf(temp));
