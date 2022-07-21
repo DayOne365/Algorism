@@ -1,0 +1,30 @@
+class Solution {
+    boolean solution(String s) {
+        boolean answer = true;
+        int cnt = 0; // p는 +1 y는 -1 -> 키포인트 나중에 cnt가 0이면 p와 Y의 갯수는 동일함으로 true!
+        char ch = ' '; // ch 문자 변수를 선언한다.. 스페이스바 하나를 넣어줘야한다. 엑셀로 생각하면 안된다.
+
+        for(int i = 0; i < s.length(); i++){
+            ch = s.charAt(i); // 문자열을 문자로 변환
+            if(ch == 'P' || ch == 'p'){ // "" 쌍따옴표 안된다....
+                cnt++; // 대문자 소문자 p이면 카운트 상승
+            } else if (ch == 'Y' || ch == 'y') {
+                cnt--; // 대문자 소문자 Y이면 감소
+            }
+            if (cnt != 0){ // 증감을 한 cnt 변수가 0이 아니면 둘의 갯수는 다르므로 false 반환
+                answer = false;
+            }else {
+                answer = true;
+            }
+
+        }
+        return answer;
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.solution("pyyyyyyypp"));
+    }
+}

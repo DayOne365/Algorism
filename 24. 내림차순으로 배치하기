@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+class Solution {
+	public long solution(long n) {
+		long answer = 0;
+		String str = "";
+		str += n; // ㅅㅂ ? 롱이 바로 들어가지네 ? 이게 돼 ?
+        // 도대체가 시바 구분이없어 ....       
+        
+        // 문자  배열 = 변수.문자 배열 변환
+		char[] arr = str.toCharArray();
+        // 문자배열을 내림차순으로 ?
+		Arrays.sort(arr);
+        // str를 초기화 했다..
+		str = "";
+        // 반복문은 문자배열 arr 길이에서 -1; 아,,, 증감식을 거꾸로...
+		for (int i = arr.length - 1; i >= 0; i--)
+			str += arr[i]; // 문자열 변수에 문자 배열을 넣는다
+		answer = Long.parseLong(str); // 문자열 변수를 롱 자료형으로 변환한다.
+
+		return answer;
+	}
+}

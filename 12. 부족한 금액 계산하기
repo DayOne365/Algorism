@@ -1,0 +1,17 @@
+class Solution {
+    public long solution(int price, int money, int count) {
+        long answer = 0;
+        int result = 0;
+        // ( 3+ 6 + 9 + 12 )
+        //  4번 3 + 3 + 3 + 3
+        // 횟수를 돌려  [0, 1, 2, 3] = count
+        // 3 * (i + 1 )
+        // 3 * 1 , 3 * 2, 3 * 3, 3 * 4
+        for (int i = 0; i < count; i++){
+            result += price * (i + 1);
+                                 
+        }
+        if ( result > money ) answer = result - money;
+        return answer;
+    }
+}

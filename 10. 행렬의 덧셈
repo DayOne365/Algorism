@@ -1,0 +1,16 @@
+class Solution {
+    public int[][] solution(int[][] arr1, int[][] arr2) {
+        
+        // arr1 = arr2 행과 열의 길이가 같다 
+        // [[1,2],[2,3]] 첫번째 껍질 까기
+        // [1,2],[2,3] 두번 째 껍질 까기
+        
+        for ( int i =0; i < arr1.length; i++){ // 배열 길이 확인
+            for (int j = 0; j < arr1[0].length; j++){
+                arr1[i][j] += arr2[i][j];
+            }
+        }
+        
+        return arr1;
+    }
+}

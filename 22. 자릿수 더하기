@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Solution {
+    public int solution(int n) {
+        int answer = 0;
+    
+        while(n >= 1){
+            answer += n % 10; // 각 자리수의 숫자를 축출하여 answer에 저장
+            n /= 10; // 10으로 나누어 몫이 나올 때까지 -> 
+        }
+        
+        return answer;
+    }
+}
