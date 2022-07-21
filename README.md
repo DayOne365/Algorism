@@ -7,7 +7,7 @@
 String divNum = String.valueOf(x); // 인트형 매개변수를 문자열로 바꾸어 변수에 저장
 ```
 
-###문자열 변수의 배열을 역순으로 재배열할 때
+### 문자열 변수의 배열을 역순으로 재배열할 때
 ```
 StringBuilder sb = new StringBuilder(str);
 sb = sb.reverse();
