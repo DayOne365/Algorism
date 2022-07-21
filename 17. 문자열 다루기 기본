@@ -1,0 +1,25 @@
+class Solution {
+    public boolean solution(String s) {
+        boolean answer = true;
+        char[] temp = s.toCharArray();  // 문자열이 보이면 문자 배열로 바꿀 생각도 해야겠다 ..... ㅇ
+        if(temp.length !=4 && temp.length != 6){
+            return false;
+        }
+        // 문자 자료형의 숫자도 대소 관계가 있다 ????
+        for(int i = 0; i < temp.length; i ++){
+            if(!(temp[i] >= '0' && temp[i] <= '9')){
+                answer = false; // 문자가 섞여서 계산할 수 없으니까...
+                return  answer;
+            }
+        }
+        return answer;
+    }
+}
+
+
+public class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.solution("1234"));
+    }
+}
