@@ -16,6 +16,11 @@ sb = sb.reverse();
 문자배열을 내림차순으로 ?
 Arrays.sort(arr);
 
+1-2. 가장 마지막 인덱스부터 내려오는 반복문
+// arr. length -1은 배열의 가장 마지막 인덱스를 의미
+for (int i = arr.length - 1; i >= 0; i--)
+str += arr[i]; // 문자열 변수에 문자 배열을 넣는다
+
 
 2. 배열로 만들기 ( 꼭 .split("") 하면 이게 배열화 시킬 수 있다...
 String[] arr = sb.toString().split("");
@@ -23,4 +28,4 @@ String[] arr = sb.toString().split("");
 3. 무적의 정수형으로 변환하기
 Integer.parseInt(arr[i]);
 
-4. 
+
