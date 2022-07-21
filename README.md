@@ -1,10 +1,20 @@
 # Algorism
-알고리즘 문제 하루에 10개씩 풀기
-풀었던 문제 또 풀기
+
+## 몇가지 기술들을 정리하기
 
 
-자주 볼 것
-* 가운데 글자 가져오기
-* 2016년 달력
-* 나누어 떨어지는 숫자 
+1. StringBuilder 는 reverse 오름차순이 가능하다 ( 자연수 뒤집기 )
 
+스트링 빌드를 가져온다 ?
+StringBuilder sb = new StringBuilder(str);
+스트링 빌드에서 뒤집는다 ?
+sb = sb.reverse();
+
+
+2. 배열로 만들기 ( 꼭 .split("") 하면 이게 배열화 시킬 수 있다...
+String[] arr = sb.toString().split("");
+
+3. 무적의 정수형으로 변환하기
+Integer.parseInt(arr[i]);
+
+4. 
