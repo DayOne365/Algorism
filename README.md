@@ -51,6 +51,15 @@ list.add(a);
        }
     }
 ```
+```
+int min = Integer.MAX_VALUE;
+for (int a : arr ){
+   if(min > a ) min = a;
+} 
+
+
+
+```
 
 ### 리스트에 해당 값 삭제하기
 ```		
